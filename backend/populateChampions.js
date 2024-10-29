@@ -32,7 +32,7 @@ const fetchChampionData = async () => {
         const championResponse = await axios.get(`https://ddragon.leagueoflegends.com/cdn/14.21.1/data/en_US/champion/${championKey}.json`);
         const championData = championResponse.data.data[championKey];
   
-        // Map the fetched data to your schema
+        // Map the fetched data to champion schema
         const championDocument = {
           id: championData.id,
           key: championData.key,
@@ -48,22 +48,22 @@ const fetchChampionData = async () => {
               Q: {
                 name: championData.spells[0].name,
                 description: championData.spells[0].description,
-                cooldownBurn: championData.spells[0].cooldownBurn, // Store cooldownBurn directly
+                cooldownBurn: championData.spells[0].cooldownBurn,
               },
               W: {
                 name: championData.spells[1].name,
                 description: championData.spells[1].description,
-                cooldownBurn: championData.spells[1].cooldownBurn, // Store cooldownBurn directly
+                cooldownBurn: championData.spells[1].cooldownBurn,
               },
               E: {
                 name: championData.spells[2].name,
                 description: championData.spells[2].description,
-                cooldownBurn: championData.spells[2].cooldownBurn, // Store cooldownBurn directly
+                cooldownBurn: championData.spells[2].cooldownBurn,
               },
               R: {
                 name: championData.spells[3].name,
                 description: championData.spells[3].description,
-                cooldownBurn: championData.spells[3].cooldownBurn, // Store cooldownBurn directly
+                cooldownBurn: championData.spells[3].cooldownBurn, 
               }
           }
         };

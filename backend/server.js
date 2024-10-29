@@ -8,6 +8,7 @@ app.use(cors()); // Enable CORS for all routes
 
 app.use(express.json());
 
+//Connect to MongoDB using mongoose
 mongoose.connect('mongodb+srv://megapixeldrago:iMxDIC5ssOL4hb0H@lolhelp.l1ll8.mongodb.net/?retryWrites=true&w=majority&appName=lolhelp')
 .then(() => console.log("MongoDB connected successfully!"))
 .catch((error) => console.error("MongoDB connection error:", error));
