@@ -2,11 +2,12 @@ const mongoose = require('mongoose');
 const axios = require('axios');
 const Champion = require('./models/champion');
 const tipsData = require('./data/tipsData');
+require('dotenv').config();
 
 // Connect to MongoDB Atlas
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://megapixeldrago:iMxDIC5ssOL4hb0H@lolhelp.l1ll8.mongodb.net/?retryWrites=true&w=majority&appName=lolhelp');
+    await mongoose.connect(process.env.MONGO_URI);
     console.log('MongoDB connected');
   } catch (error) {
     console.error('MongoDB connection error:', error);
