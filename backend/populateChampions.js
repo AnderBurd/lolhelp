@@ -1,14 +1,12 @@
 const mongoose = require('mongoose');
 const axios = require('axios');
 const Champion = require('./models/champion');
+const tipsData = require('./data/tipsData');
 
 // Connect to MongoDB Atlas
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://megapixeldrago:iMxDIC5ssOL4hb0H@lolhelp.l1ll8.mongodb.net/?retryWrites=true&w=majority&appName=lolhelp', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
+    await mongoose.connect('mongodb+srv://megapixeldrago:iMxDIC5ssOL4hb0H@lolhelp.l1ll8.mongodb.net/?retryWrites=true&w=majority&appName=lolhelp');
     console.log('MongoDB connected');
   } catch (error) {
     console.error('MongoDB connection error:', error);
@@ -31,6 +29,11 @@ const fetchChampionData = async () => {
       for (const championKey in champions) {
         const championResponse = await axios.get(`https://ddragon.leagueoflegends.com/cdn/14.21.1/data/en_US/champion/${championKey}.json`);
         const championData = championResponse.data.data[championKey];
+
+        //Grab tips and keySpells as well, default to empty
+        const championTips = tipsData.find(tip => tip.name == championData.name) || {};
+        const tips = championTips.tips ? championTips.tips : [];
+        const keySpells = championTips.keySpells ? championTips.keySpells : [];
   
         // Map the fetched data to champion schema
         const championDocument = {
@@ -65,14 +68,18 @@ const fetchChampionData = async () => {
                 description: championData.spells[3].description,
                 cooldownBurn: championData.spells[3].cooldownBurn, 
               }
-          }
+          },
+          tips: tips,
+          keySpells: keySpells
         };
   
         // Push the document to the array
         championDocuments.push(championDocument);
+
+
         console.log(`${championData.name} fetched successfully`);
       }
-  
+ 
       // Insert all champion documents into the database at once
       await Champion.insertMany(championDocuments);
       console.log('All champions stored successfully');
@@ -86,5 +93,4 @@ const fetchChampionData = async () => {
     await fetchChampionData();
     mongoose.connection.close(); // Close connection after operation
   };
-  
   main();

@@ -17,7 +17,9 @@ const championSchema = new mongoose.Schema({
     W: abilitySchema,
     E: abilitySchema,
     R: abilitySchema
-  }
+  },
+  tips: [String],
+  keySpells: [String]
 });
 
 const Champion = mongoose.model('Champion', championSchema);

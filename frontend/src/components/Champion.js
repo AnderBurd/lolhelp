@@ -37,6 +37,21 @@ const Champion = ({ name }) => {
                     </li>
                 ))}
             </ul>
+            <h3>Tips</h3>
+            <ul>{championData.tips.map((tip)=>(
+                <li>
+                   {tip} 
+                </li>
+            ))}
+            </ul>
+
+            <h3>Key spells</h3>
+            <ul>{championData.keySpells.map((spell)=>(
+                <li>
+                    {spell} 
+                </li>
+            ))}
+            </ul>
         </div>
     );
 };
