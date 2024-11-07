@@ -1,19 +1,20 @@
-
 import {Link} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
 import React, { useState } from 'react';
-import Champion from '../components/Champion';
 
 const HomeScreen = () =>{
-    const [championName, setChampionName] = useState('');
     const [searchedChampion, setSearchedChampion] = useState(''); // New state to store searched champion
+    const navigate = useNavigate();
 
     const handleInputChange = (event) => {
-        setChampionName(event.target.value); // Update the input value
+        setSearchedChampion(event.target.value); // Update the input value
     };
 
     const handleSearch = () => {
-        setSearchedChampion(championName); // Update the searched champion when the button is clicked
+        if(searchedChampion.trim() !== ''){
+            navigate(`/ChampInfo/${searchedChampion}`)
+        }
     };
 
     return (
@@ -22,13 +23,10 @@ const HomeScreen = () =>{
             <input 
                 type="text" 
                 placeholder="Enter Champion Name" 
-                value={championName} 
+                value={searchedChampion} 
                 onChange={handleInputChange} 
             />
             <button onClick={handleSearch}>Search</button>
-
-            {/* Conditionally render the Champion component when searchedChampion is set */}
-            {searchedChampion && <Champion name={searchedChampion} />}
         </div>
     );
 }

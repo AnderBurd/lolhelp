@@ -10,7 +10,8 @@ const App = () => {
     return (
         <Router>
             <Routes>
-                <Route path = "/" element = {<HomeScreen/>}> </Route>    
+                <Route path = "/" element = {<HomeScreen/>}> </Route>
+                <Route path = "/ChampInfo/:championName" element = {<ChampInfoScreen/>}> </Route>  
             </Routes>
         </Router>
     );
