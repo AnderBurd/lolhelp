@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import { useNavigate } from 'react-router-dom';
+import '../styles/HomeScreen.css'
 
 import React, { useState } from 'react';
 
@@ -18,15 +19,18 @@ const HomeScreen = () =>{
     };
 
     return (
-        <div>
-            <h1>League of Legends Champion Info</h1>
-            <input 
-                type="text" 
-                placeholder="Enter Champion Name" 
-                value={searchedChampion} 
-                onChange={handleInputChange} 
-            />
-            <button onClick={handleSearch}>Search</button>
+        <div class = "container">
+            <h1 class = "title">LoLHelp</h1>
+            <div class = "searchbar">
+                <input 
+                    class = "inputForm"
+                    type="text" 
+                    placeholder="Enter Champion Name" 
+                    value={searchedChampion} 
+                    onChange={handleInputChange} 
+                />
+                <button class = "searchButton" onClick={handleSearch}></button>
+            </div>
         </div>
     );
 }
