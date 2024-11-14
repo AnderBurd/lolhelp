@@ -1,3 +1,86 @@
 .containerInfo{
     color: white;
+    padding:30px;
 }
+
+
+.containerChampion{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile{
+    display: flex;
+    gap: 15px;
+}
+
+.champName{
+    font-size: 6em;
+    margin: 0;
+}
+
+.champPic{
+    width: 144px;
+    height: 144px;
+}
+
+.abilityButtons{
+    display: flex;
+    gap: 64px;
+    padding: 50px;
+    background-color: #28283e;
+    
+}
+
+.abilityButton{
+    width:72px;
+    height:72px;
+    cursor: pointer;
+    background-color: #28283e;
+}
+
+.abilityShowcase{
+    display: flex;
+    gap: 32px;
+    padding: 64px;
+    background-color: #28283e;
+    margin: 64px;
+}
+
+.videoContainer{
+    background-color: #28283e;
+}
+
+.buttonContainer{
+    background-color: #28283e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonContainer>h3{
+    background-color: #28283e;
+    margin: 5px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 717px;
+    background-color: #28283e;
+}
+/*this is the spell description*/
+.description>p3{
+    margin-left: 10px;
+    background-color: #28283e;
+    font-size: large;
+}
+/*This is the spell name*/
+.description>h2{
+    background-color: #28283e;
+    font-style: italic;
+}
+
+

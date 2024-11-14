@@ -5,9 +5,10 @@ const AbilityVid = ({championData, abilitySpell}) =>{
         <div class = "videoContainer">
             <video src = {championData.videos[abilitySpell]} 
             type = "video/mp4" 
-            video controls
+            video controls autoPlay
             width="680"
-            height = "470">
+            height = "470"
+            alt = "Unavailable">
             </video>
         </div>
     );

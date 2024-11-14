@@ -28,6 +28,7 @@ const championSchema = new mongoose.Schema({
   key: { type: String, required: true },
   name: { type: String, required: true },
   abilities: {
+    passive: abilitySchema,
     Q: abilitySchema,
     W: abilitySchema,
     E: abilitySchema,

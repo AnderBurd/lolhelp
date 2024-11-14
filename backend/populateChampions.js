@@ -47,27 +47,32 @@ const fetchChampionData = async () => {
             passive: {
                 name: championData.passive.name,
                 description: championData.passive.description,
-                cooldownBurn: championData.passive.cooldownBurn || "N/A" // Default to "N/A" if not available
+                cooldownBurn: championData.passive.cooldownBurn || "N/A", // Default to "N/A" if not available
+                sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/passive/" + championData.passive.image.full
               },
               Q: {
                 name: championData.spells[0].name,
                 description: championData.spells[0].description,
                 cooldownBurn: championData.spells[0].cooldownBurn,
+                sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/spell/"+championData.spells[0].image.full
               },
               W: {
                 name: championData.spells[1].name,
                 description: championData.spells[1].description,
                 cooldownBurn: championData.spells[1].cooldownBurn,
+                sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/spell/"+championData.spells[1].image.full
               },
               E: {
                 name: championData.spells[2].name,
                 description: championData.spells[2].description,
                 cooldownBurn: championData.spells[2].cooldownBurn,
+                sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/spell/"+championData.spells[2].image.full
               },
               R: {
                 name: championData.spells[3].name,
                 description: championData.spells[3].description,
                 cooldownBurn: championData.spells[3].cooldownBurn, 
+                sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/spell/"+championData.spells[3].image.full
               }
           },
           tips: tips,
@@ -80,7 +85,7 @@ const fetchChampionData = async () => {
             sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/passive/" + championData.passive.image.full
           },
           videos: {
-            passive: "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_P1.mp4",
+            passive: "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_P1.mp4", //Taken from league of legends champions website
             Q:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_Q1.mp4",
             W:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_W1.mp4",
             E:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_E1.mp4",
