@@ -78,6 +78,13 @@ const fetchChampionData = async () => {
             name: championData.passive.name,
             description: championData.passive.description,
             sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/passive/" + championData.passive.image.full
+          },
+          videos: {
+            passive: "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_P1.mp4",
+            Q:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_Q1.mp4",
+            W:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_W1.mp4",
+            E:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_E1.mp4",
+            R:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_R1.mp4"
           }
         };
   

@@ -15,6 +15,14 @@ const passiveSchema = new mongoose.Schema({
   sprite: String
 })
 
+const abilityVideosSchema = new mongoose.Schema({
+  passive: String,
+  Q: String,
+  W: String,
+  E: String,
+  R: String
+})
+
 const championSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   key: { type: String, required: true },
@@ -29,7 +37,8 @@ const championSchema = new mongoose.Schema({
   keySpells: [String],
   profileImg: String,
   championSplash: String,
-  passive: passiveSchema
+  passive: passiveSchema,
+  videos: abilityVideosSchema
 });
 
 const Champion = mongoose.model('Champion', championSchema);

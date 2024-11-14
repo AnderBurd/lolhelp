@@ -58,6 +58,11 @@ const Champion = ({ name }) => {
             <h4>{championData.passive.name}</h4>
             <p3>{championData.passive.description}</p3>
             <img src = {championData.passive.sprite} alt = "Could not load passive"></img>
+            <video src = {championData.videos.passive} type="video/mp4" video controls autoPlay></video>
+            <video src = {championData.videos.Q} type="video/mp4" video controls autoPlay></video>
+            <video src = {championData.videos.W} type="video/mp4" video controls autoPlay></video>
+            <video src = {championData.videos.E} type="video/mp4" video controls autoPlay></video>
+            <video src = {championData.videos.R} type="video/mp4" video controls autoPlay></video>
         </div>
     );
 };
