@@ -30,6 +30,8 @@ const Champion = ({ name }) => {
         <div>
             <h2>{championData.name}</h2>
             <h3>Abilities</h3>
+            <img src = {championData.profileImg} alt = "Couldnt load"></img>
+            <img src = {championData.championSplash} alt = "Couldnt load"></img>
             <ul>
                 {Object.keys(championData.abilities).map((ability) => (
                     <li key={ability}>
@@ -52,6 +54,10 @@ const Champion = ({ name }) => {
                 </li>
             ))}
             </ul>
+            <h3>Passive</h3>
+            <h4>{championData.passive.name}</h4>
+            <p3>{championData.passive.description}</p3>
+            <img src = {championData.passive.sprite} alt = "Could not load passive"></img>
         </div>
     );
 };

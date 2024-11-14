@@ -6,7 +6,14 @@ const abilitySchema = new mongoose.Schema({
   description: { type: String, required: true },
   avoid_tips: String,
   cooldownBurn: { type: String, required: true },
+  sprite: String
 });
+
+const passiveSchema = new mongoose.Schema({
+  name: {type: String, required: true},
+  description: {type: String, required: true},
+  sprite: String
+})
 
 const championSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
@@ -19,7 +26,10 @@ const championSchema = new mongoose.Schema({
     R: abilitySchema
   },
   tips: [String],
-  keySpells: [String]
+  keySpells: [String],
+  profileImg: String,
+  championSplash: String,
+  passive: passiveSchema
 });
 
 const Champion = mongoose.model('Champion', championSchema);

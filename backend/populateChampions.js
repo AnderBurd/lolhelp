@@ -17,7 +17,7 @@ const connectDB = async () => {
 const fetchChampionData = async () => {
     try {
       // Fetch the list of champions
-      const response = await axios.get('https://ddragon.leagueoflegends.com/cdn/14.21.1/data/en_US/champion.json');
+      const response = await axios.get('https://ddragon.leagueoflegends.com/cdn/14.22.1/data/en_US/champion.json');
       const champions = response.data.data;
   
       // Clear existing champions in the database
@@ -28,7 +28,7 @@ const fetchChampionData = async () => {
   
       // Loop through each champion to fetch detailed data
       for (const championKey in champions) {
-        const championResponse = await axios.get(`https://ddragon.leagueoflegends.com/cdn/14.21.1/data/en_US/champion/${championKey}.json`);
+        const championResponse = await axios.get(`https://ddragon.leagueoflegends.com/cdn/14.22.1/data/en_US/champion/${championKey}.json`);
         const championData = championResponse.data.data[championKey];
 
         //Grab tips and keySpells as well, default to empty
@@ -71,7 +71,14 @@ const fetchChampionData = async () => {
               }
           },
           tips: tips,
-          keySpells: keySpells
+          keySpells: keySpells,
+          profileImg: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/champion/"+championData.image.full,
+          championSplash: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/" + championData.name + "_0.jpg",
+          passive: {
+            name: championData.passive.name,
+            description: championData.passive.description,
+            sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/passive/" + championData.passive.image.full
+          }
         };
   
         // Push the document to the array
