@@ -85,11 +85,11 @@ const fetchChampionData = async () => {
             sprite: "https://ddragon.leagueoflegends.com/cdn/14.22.1/img/passive/" + championData.passive.image.full
           },
           videos: {
-            passive: "https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_P1.mp4", //Taken from league of legends champions website
-            Q:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_Q1.mp4",
-            W:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_W1.mp4",
-            E:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_E1.mp4",
-            R:"https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0" + championData.key + "/ability_0" + championData.key + "_R1.mp4"
+            passive: `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0${String(championData.key).padStart(3, '0')}/ability_0${String(championData.key).padStart(3, '0')}_P1.mp4`, //Taken from league of legends champions website
+            Q:`https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0${String(championData.key).padStart(3, '0')}/ability_0${String(championData.key).padStart(3, '0')}_Q1.mp4`,
+            W:`https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0${String(championData.key).padStart(3, '0')}/ability_0${String(championData.key).padStart(3, '0')}_W1.mp4`,
+            E:`https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0${String(championData.key).padStart(3, '0')}/ability_0${String(championData.key).padStart(3, '0')}_E1.mp4`,
+            R:`https://d28xe8vt774jo5.cloudfront.net/champion-abilities/0${String(championData.key).padStart(3, '0')}/ability_0${String(championData.key).padStart(3, '0')}_R1.mp4`,
           }
         };
   
