@@ -7,7 +7,7 @@ const ChampInfoScreen = () =>{
     const {championName} = useParams(); //Grab the champion name from the search
     console.log(championName)
     return(
-        <div class = "container">
+        <div class = "containerInfo">
             {/*Render out champion component based on the championName*/}
             {championName && <Champion name = {championName}/>} 
         </div>

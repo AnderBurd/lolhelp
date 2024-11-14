@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import AbilityVid from './AbilityVid';
 
 const Champion = ({ name }) => {
     const [championData, setChampionData] = useState(null);
@@ -58,11 +59,9 @@ const Champion = ({ name }) => {
             <h4>{championData.passive.name}</h4>
             <p3>{championData.passive.description}</p3>
             <img src = {championData.passive.sprite} alt = "Could not load passive"></img>
-            <video src = {championData.videos.passive} type="video/mp4" video controls autoPlay></video>
-            <video src = {championData.videos.Q} type="video/mp4" video controls autoPlay></video>
-            <video src = {championData.videos.W} type="video/mp4" video controls autoPlay></video>
-            <video src = {championData.videos.E} type="video/mp4" video controls autoPlay></video>
-            <video src = {championData.videos.R} type="video/mp4" video controls autoPlay></video>
+            <h3>Champion spells</h3>
+            <AbilityVid championData={championData} abilitySpell="Q"/>
+            <AbilityVid championData={championData} abilitySpell="W"/>
         </div>
     );
 };
