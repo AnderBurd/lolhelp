@@ -1,12 +1,12 @@
 import React from 'react';
 
-const AbilityButton = ({championData, abilitySpell,handleClick}) =>{
+const AbilityButton = ({championData, abilitySpell,handleClick, isSelected}) =>{
     return(
-        <div class = "buttonContainer">
+        <div className = "buttonContainer">
             <h3>{abilitySpell}</h3>
             <img src = {championData.abilities[abilitySpell].sprite} 
             alt = {`${abilitySpell} ability icon`}
-            class = "abilityButton"
+            className = {`abilityButton ${isSelected ? 'selected' : ''}`} //check if spell is selected for border
             onClick = {handleClick}>
             </img>
         </div>

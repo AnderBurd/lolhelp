@@ -7,7 +7,8 @@ import '../styles/ChampInfoScreen.css'
 const Champion = ({ name }) => {
     const [championData, setChampionData] = useState(null);
     const [error, setError] = useState(null);
-    const[abilityVideo, setAbilityVideo] = useState("passive")
+    //Used to keep track of the selected spell, for the video player
+    const[selectedSpell, setSelectedSpell] = useState("passive")
 
     useEffect(() => {
         const fetchChampionData = async () => {
@@ -32,7 +33,7 @@ const Champion = ({ name }) => {
 
     //Used to change the selected spell
     function changeVideo(spellName){
-        setAbilityVideo(spellName)
+        setSelectedSpell(spellName)
     }
 
     function cleanText(myText){
@@ -41,26 +42,48 @@ const Champion = ({ name }) => {
         .replace(/undefined/g, ' ')
     }
 
+
     return (
-        <div class = "containerChampion">
-            <div class = "profile">
+        <div className = "containerChampion">
+            <div className = "profile">
                 <img src = {championData.profileImg} alt = "Couldnt load" class = "champPic"></img>  
-                <h2 class = "champName">{championData.name}</h2>          
+                <h2 className = "champName">{championData.name}</h2>          
             </div>
 
-            <div class = "abilityShowcase">
-                <div class = "description">
-                    <div class = "abilityButtons">
-                        <AbilityButton championData={championData} abilitySpell="passive"handleClick = {()=>changeVideo("passive")}/>
-                        <AbilityButton championData={championData} abilitySpell="Q" handleClick = {()=>changeVideo("Q")}/>
-                        <AbilityButton championData={championData} abilitySpell="W"handleClick = {()=>changeVideo("W")}/>
-                        <AbilityButton championData={championData} abilitySpell="E"handleClick = {()=>changeVideo("E")}/>
-                        <AbilityButton championData={championData} abilitySpell="R"handleClick = {()=>changeVideo("R")}/>
+            <div className = "abilityShowcase">
+                <div className = "description">
+                    <div className = "abilityButtons">
+                        <AbilityButton championData={championData} 
+                        abilitySpell="passive" 
+                        isSelected = {selectedSpell === "passive"}
+                        handleClick = {()=>changeVideo("passive")}/>
+
+                        <AbilityButton championData={championData} 
+                        abilitySpell="Q" 
+                        isSelected = {selectedSpell === "Q"}
+                        handleClick = {()=>changeVideo("Q")}/>
+
+                        <AbilityButton championData={championData} 
+                        abilitySpell="W" 
+                        isSelected = {selectedSpell === "W"}
+                        handleClick = {()=>changeVideo("W")}/>
+
+                        <AbilityButton championData={championData} 
+                        abilitySpell="E" 
+                        isSelected = {selectedSpell === "E"}
+                        handleClick = {()=>changeVideo("E")}/>
+
+                        <AbilityButton championData={championData} 
+                        abilitySpell="R" 
+                        isSelected = {selectedSpell === "R"}
+                        handleClick = {()=>changeVideo("R")}/>
                     </div>
-                    <h2>{championData.abilities[abilityVideo].name + "(" + abilityVideo + ")"}</h2>
-                    <p3>{cleanText(championData.abilities[abilityVideo].description)}</p3>
+                    <h2>{championData.abilities[selectedSpell].name + "(" + selectedSpell + ")"}</h2>
+                    <p3>{cleanText(championData.abilities[selectedSpell].description)}</p3>
+                    <p2>Cooldown</p2>
+                    <p4>{championData.abilities[selectedSpell].cooldownBurn} Seconds</p4>
                 </div>
-                <AbilityVid championData={championData} abilitySpell={abilityVideo}/>
+                <AbilityVid championData={championData} abilitySpell={selectedSpell}/>
             </div>
 
 

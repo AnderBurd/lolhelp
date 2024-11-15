@@ -2,7 +2,7 @@ import React from 'react';
 
 const AbilityVid = ({championData, abilitySpell}) =>{
     return(
-        <div class = "videoContainer">
+        <div className = "videoContainer">
             <video src = {championData.videos[abilitySpell]} 
             type = "video/mp4" 
             video controls autoPlay
