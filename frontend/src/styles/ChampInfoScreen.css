@@ -54,6 +54,7 @@
     padding: 64px;
     background-color: #28283e;
     margin: 64px;
+
 }
 
 .videoContainer{
@@ -105,3 +106,17 @@
     background-color: #28283e;
 }
 
+/*For keyAbilities.js*/
+.keyAbilityCard{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    background-color: #28283e;
+}
+
+.keyAbilityCard>p1{
+    background-color: #28283e;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: large;
+}

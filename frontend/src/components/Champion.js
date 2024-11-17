@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import AbilityVid from './AbilityVid.js';
 import AbilityButton from './AbilityButton.js';
+import KeyAbilitiesCard from './KeyAbilitiesCard.js';
 import '../styles/ChampInfoScreen.css'
 
 const Champion = ({ name }) => {
@@ -84,6 +85,19 @@ const Champion = ({ name }) => {
                     <p4>{championData.abilities[selectedSpell].cooldownBurn} Seconds</p4>
                 </div>
                 <AbilityVid championData={championData} abilitySpell={selectedSpell}/>
+            </div>
+            <div className='keyAbilities'>
+                <h1>Key Abilities</h1>
+                {championData.keySpells.map((spell, index)=>(
+                    <KeyAbilitiesCard
+                       championData={championData} 
+                       spell = {spell}
+                       isSelected = {selectedSpell === spell}
+                       handleClick = {()=>changeVideo(spell)}
+                       currentSpell = {index} // Used to know right index for tip
+                    />
+                ))}
+
             </div>
 
 
