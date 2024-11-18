@@ -3,6 +3,8 @@ import axios from 'axios';
 import AbilityVid from './AbilityVid.js';
 import AbilityButton from './AbilityButton.js';
 import KeyAbilitiesCard from './KeyAbilitiesCard.js';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 import '../styles/ChampInfoScreen.css'
 
 const Champion = ({ name }) => {
@@ -10,6 +12,8 @@ const Champion = ({ name }) => {
     const [error, setError] = useState(null);
     //Used to keep track of the selected spell, for the video player
     const[selectedSpell, setSelectedSpell] = useState("passive")
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchChampionData = async () => {
@@ -29,7 +33,7 @@ const Champion = ({ name }) => {
     }
 
     if (!championData) {
-        return <div>Loading...</div>;
+        return <div className = "loading">Loading...</div>;
     }
 
     //Used to change the selected spell
@@ -46,6 +50,7 @@ const Champion = ({ name }) => {
 
     return (
         <div className = "containerChampion">
+            <FaArrowLeft className='backButton' onClick = {()=>navigate("/")}/>
             <div className = "profile">
                 <img src = {championData.profileImg} alt = "Couldnt load" class = "champPic"></img>  
                 <h2 className = "champName">{championData.name}</h2>          
@@ -86,42 +91,22 @@ const Champion = ({ name }) => {
                 </div>
                 <AbilityVid championData={championData} abilitySpell={selectedSpell}/>
             </div>
-            <div className='keyAbilities'>
+            <div>
                 <h1>Key Abilities</h1>
-                {championData.keySpells.map((spell, index)=>(
-                    <KeyAbilitiesCard
-                       championData={championData} 
-                       spell = {spell}
-                       isSelected = {selectedSpell === spell}
-                       handleClick = {()=>changeVideo(spell)}
-                       currentSpell = {index} // Used to know right index for tip
-                    />
-                ))}
+                <div className='keyAbilitiesContainer'>
+                    {championData.keySpells.map((spell, index)=>(
+                        <KeyAbilitiesCard
+                        championData={championData} 
+                        spell = {spell}
+                        isSelected = {selectedSpell === spell}
+                        handleClick = {()=>changeVideo(spell)}
+                        currentSpell = {index} // Used to know right index for tip
+                        />
+                    ))}
+                </div>
 
             </div>
 
-
-            {/* <h3>Tips</h3>
-            <ul>{championData.tips.map((tip)=>(
-                <li>
-                   {tip} 
-                </li>
-            ))}
-            </ul>
-
-            <h3>Key spells</h3>
-            <ul>{championData.keySpells.map((spell)=>(
-                <li>
-                    {spell} 
-                </li>
-            ))}
-            </ul> */}
-            {/* <h3>Passive</h3>
-            <h4>{championData.passive.name}</h4>
-            <p3>{championData.passive.description}</p3>
-            <img src = {championData.passive.sprite} alt = "Could not load passive"></img>
-            <h3>Champion spells</h3>
-            */}
         </div>
     );
 };

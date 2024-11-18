@@ -41,7 +41,7 @@ module.exports = [
       {
         name: "Ambessa",
         tips:[
-            "Ambessa's passive allows her to dash after every ability cast, making it extremely hard to run away from her once she is on you, each of these dash auto's will grant her mana. If she doesn't have anything to auto she will run out of enerygy fast.",
+            "Ambessa's passive allows her to dash after every ability cast, making it extremely hard to run away from her once she is on you, each of these dash auto's will grant her energy. If she doesn't have anything to auto she will run out of energy fast.",
             "Like the rest of her spells, her W has a long cooldown so make sure your pressuring her when she doesnt have it up",
             "Ambessa's ultimate is her main way of initially getting on top of someone"
         ],
