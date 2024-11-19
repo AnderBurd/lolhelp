@@ -14,6 +14,7 @@
     color: aliceblue;
     font-size: 15vh;
     margin-top: -20vh;
+
 }
 
 
@@ -45,4 +46,40 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-left: 40px;
+}
+
+.suggestion-container{
+    position: relative;
+    width: 600px;
+
+    background-color: white;  
+}
+
+.suggestions-list{
+    position: absolute;
+    width: 600px;
+    border-radius: 8px;
+    background-color: white;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.suggestion-item {
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+}
+
+.suggestion-item:hover {
+    background-color: #404056;
+}
+
+.list-profilePic{
+    width: 30px;
+    height: 30px;
 }
