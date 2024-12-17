@@ -271,5 +271,434 @@ module.exports = [
           "Evelynn's R lets her escape while dealing damage. Save burst for after she uses it."
         ],
         keySpells:["passive","W","R"]},
-
+        {
+          name: "Ezreal",
+          tips: [
+              "Stand near minions when Ezreal uses Mystic Shot (Q) to minimize poke damage.",
+              "Engage Ezreal when his Arcane Shift (E) is on cooldown, as he lacks escape options.",
+              "Careful when recalling at low HP, ezreals R can hit you from anywhere on the map"
+          ],
+          keySpells: ["Q", "E", "R"]
+      },
+      {
+          name: "Fiddlesticks",
+          tips: [
+              "Interrupt his Drain (W) with crowd control to prevent him from healing.",
+              "Place wards in common jungle camp areas to spot Fiddlesticks channeling Crowstorm (R)."
+          ],
+          keySpells: ["Q", "R"]
+      },
+      {
+          name: "Fiora",
+          tips: [
+              "Try to mask your cc abilities by chaining them to minimize the chance of Fiora parrying it",
+              "Your can walk out of range of her passive and back in to reset the position of her vitals",
+              "You can hug a wall to make it impossible for her to finish proccing her R"
+          ],
+          keySpells: ["W", "passive", "R"]
+      },
+      {
+          name: "Fizz",
+          tips: [
+              "Try to bait out Fizz's Playful/Trickster (E) before committing to key abilities.",
+              "Run away from your teamates if you get hit by Fizz's R, it does a AOE"
+          ],
+          keySpells: ["E","R"]
+      },
+      {
+          name: "Galio",
+          tips: [
+              "Avoid grouping up against Galio to minimize the impact of his Hero's Entrance (R).",
+              "Stay out of range for his E, and galio will have a very hard time hitting the rest of his abilities on you"
+          ],
+          keySpells: ["R", "E"]
+      },
+      {
+          name: "Gangplank",
+          tips: [
+              "Watch for Gangplank's trial by fire passive, avoid trading autos with him when his sword is on fire",
+              "When his barrel is at 1/3 load, you can auto it to break it",
+              "His R is a global ult, keep this in mind even when he isnt around you"
+          ],
+          keySpells: ["passive", "E", "R"]
+      },
+      {
+          name: "Garen",
+          tips: [
+              "Don't let him heal with his passive, hit him once to deactivate it",
+              "Stay away when Garen begins spinning (E) to minimize damage.",
+              "Keep track of Garen's Demacian Justice (R) cooldown; it deals true damage."
+          ],
+          keySpells: ["passive", "E", "R"]
+      },
+      {
+          name: "Gnar",
+          tips: [
+              "Watch Gnar's Rage Bar to anticipate his transformation into Mega Gnar.",
+              "Avoid fighting Mega Gnar near walls as he can land a big ultimate (R).",
+          ],
+          keySpells: ["passive", "R"]
+      },
+      {
+          name: "Gragas",
+          tips: [
+              "Avoid clumping up when Gragas has his Explosive Cask (R) available.",
+              "Gragas is quite tanky because of his passive healing, he is hard to kill",
+          ],
+          keySpells: ["R", "passive"]
+      },
+      {
+          name: "Graves",
+          tips: [
+              "Avoid standing in front of Graves, as his basic attacks deal more damage in close range. They dont go through minions or monsters so you can hide behind them. Punish Graves during his reload animation when he can't auto-attack.",
+              "Graves' Smoke Screen (W) reduces vision—move out of it quickly to regain awareness."
+          ],
+          keySpells: ["passive", "W"]
+      },
+      {
+        name: "Gwen",
+        tips: [
+            "Dont clump up for her Q, it does massive AOE damage late game",
+            "Keep your distance when Gwen activates Skip 'n Slash (E) for mobility and extra damage.",
+            "Engage her when her Needlework (R) is on cooldown, as it is her main teamfight tool."
+        ],
+        keySpells: [ "Q","E", "R"]
+    },
+    {
+        name: "Hecarim",
+        tips: [
+            "Avoid extended fights with Hecarim when his Spirit of Dread (W) is active, as he heals a lot.",
+            "Spread out during fights to minimize the impact of Hecarim's Onslaught of Shadows (R).",
+            "Hecarim is vulnerable to crowd control while charging with Devastating Charge (E)."
+        ],
+        keySpells: ["W", "R", "E"]
+    },
+    {
+        name: "Heimerdinger",
+        tips: [
+            "Destroy Heimerdinger's turrets (Q) quickly to reduce his damage in fights. Engage Heimerdinger when his turrets are on cooldown or in an unfavorable position.",
+            "Avoid clumping up when Heimerdinger casts his upgraded CH-2 Electron Storm Grenade (E)."
+        ],
+        keySpells: ["Q", "E", "R"]
+    },
+    {
+        name: "Hwei",
+        tips: [
+          "Hwei combines key presses to unleash his different abilities so you will see him use many different ones",
+          "His Q + W spawns a small zone that deals damage after a brief delay, this spell has enough range to hit you from very far away, careful when backing at low HP",
+          "Hwei's R does massive AOE, avoid clumping up late game"
+        ],
+        keySpells: ["passive", "Q", "R"]
+    },
+    {
+        name: "Illaoi",
+        tips: [
+            "Avoid standing near Illaoi's tentacles during fights to reduce her damage output.",
+            "Dodge Test of Spirit (E) to prevent Illaoi from harassing you and summoning more tentacles. In lane if you get hit by it, it is often worth it to run out of its range to despawn your ghost",
+            "Engage Illaoi when her ultimate, Leap of Faith (R), is on cooldown, and avoid ganking her if its up, she can easily 1v2"
+        ],
+        keySpells: ["passive","E", "R"]
+    },
+    {
+        name: "Irelia",
+        tips: [
+            "Avoid fighting near low-health minions, as Irelia can dash to them with Bladesurge (Q).",
+            "Dodge Irelia's Flawless Duet (E) to avoid being stunned.",
+            "Engage her after her passive stacks fall off to reduce her damage."
+        ],
+        keySpells: ["Q", "E", "passive"]
+    },
+    {
+        name: "Ivern",
+        tips: [
+            "Daisy, Ivern's summon on his R, is strong early on careful fighting ivern if you dont have a easy way on top of him. Between his slows and Daisys knockup he can kite you easily. ",
+            "Iverns E is his only form of defence, he has no mobility. You can look to kill him in his jungle"
+        ],
+        keySpells: ["R", "E"]
+    },
+    {
+        name: "Janna",
+        tips: [
+            "Interrupt Janna's ultimate, Monsoon (R), to stop her from healing her team.",
+            "Her passive makes her very fast, watch out for her roams",
+        ],
+        keySpells: ["R", "passive"]
+    },
+    {
+        name: "Jarvan IV",
+        tips: [
+            "Flash or dash out of Jarvan IV's Cataclysm (R) to avoid being trapped.",
+            "Avoid grouping up to minimize the impact of his knock-up combo with Demacian Standard (E) and Dragon Strike (Q).",
+        ],
+        keySpells: ["R", "E"]
+    },
+    {
+        name: "Jax",
+        tips: [
+            "Avoid fighting Jax when his Counter Strike (E) is active, as he dodges auto-attacks.",
+            "Keep track of Jax's attack stacks from his passive, try to avoid fighting him early when its stacked up"
+        ],
+        keySpells: ["E", "passive"]
+    },
+    {
+        name: "Jayce",
+        tips: [
+            "Engage Jayce in melee range, as his ranged poke is his main strength.",
+            "Avoid standing in his Shock Blast (Q) combined with Acceleration Gate (E) for massive poke damage.",
+        ],
+        keySpells: ["passive", "Q"]
+    },
+    {
+      name: "Jhin",
+      tips: [
+          "This spell has a long range so carefull when you have been recently hit, it roots",
+          "Engage Jhin after he uses his fourth shot, as it deals the most damage and has a reload time.",
+          "Spread out to minimize the impact of Jhin's Curtain Call (R) in teamfights."
+      ],
+      keySpells: ["W","Passive", "R"]
+  },
+  {
+      name: "Jinx",
+      tips: [
+          "Engage Jinx when her passive, Get Excited!, is not active for easier fights.",
+          "Avoid standing close to other teammates to minimize her AoE rockets from Switcheroo! (Q).",
+          "This can travel across the whole map, carefull when your recalling at low hp"
+      ],
+      keySpells: ["passive", "Q", "R"]
+  },
+  {
+      name: "K'Sante",
+      tips: [
+          "Avoid fighting K'Sante when he is in his All Out (R) form, as he gains strength and mobility.",
+          "Maintain distance to prevent him from engaging and displacing you with Path Maker (W)."
+      ],
+      keySpells: ["R", "W"]
+  },
+  {
+      name: "Kai'Sa",
+      tips: [
+          "Dodge Kai'Sa's Void Seeker (W) to prevent her from engaging and marking you.",
+          "Focus Kai'Sa in teamfights when her Killer Instinct (R) is on cooldown.",
+          "In early trades dont let her get 5 autos on you"
+      ],
+      keySpells: ["W", "R", "passive"]
+  },
+  {
+      name: "Kalista",
+      tips: [
+          "Avoid extended fights with Kalista, as she can execute through her Rend (E).",
+          "Dont get baited into hitting her marked ally, she can save them",
+          "Use crowd control to lock Kalista in place and negate her mobility."
+      ],
+      keySpells: ["E", "R", "passive"]
+  },
+  {
+      name: "Karma",
+      tips: [
+          "Engage Karma when her Mantra (R) is on cooldown, as it empowers her abilities. Avoid clumping up to reduce the impact of her empowered abilities in teamfights."
+      ],
+      keySpells: ["R"]
+  },
+  {
+      name: "Karthus",
+      tips: [
+          "Try to move randomly, this spell is easy to dodge",
+          "Carefull when at low hp, his R hits all enemies",
+          "Run away from him after he dies, he can still attack for a while"
+      ],
+      keySpells: ["Q", "R", "passive"]
+  },
+  {
+      name: "Kassadin",
+      tips: [
+          "Punish Kassadin in the early game when he is weaker and lacks mobility. Avoid extended fights when Kassadin has Riftwalk (R) stacked for increased damage.",
+          "Engage him when his Force Pulse (E) is on cooldown early game."
+      ],
+      keySpells: ["R", "E"]
+  },
+  {
+      name: "Katarina",
+      tips: [
+          "Interrupt Katarina's Death Lotus (R) with crowd control to stop her damage.",
+          "Avoid fighting near Katarina's daggers from her Q and W she can jump to them with her E and deal AOE damage.",
+      ],
+      keySpells: ["R", "E"]
+  },
+  {
+      name: "Kayle",
+      tips: [
+          "Engage Kayle early when she is weak before reaching level 11 and 16 power spikes.",
+          "Avoid fighting Kayle when her Divine Judgment (R) is available, as it makes her or an ally invulnerable.",
+          "Close the gap quickly to stop her ranged poke from Starfire Spellblade (E)."
+      ],
+      keySpells: ["passive","R", "E"]
+  },
+  {
+      name: "Kayn",
+      tips: [
+          "Identify Kayn's form (Shadow Assassin or Darkin) and adjust your strategy accordingly. Blue is assasin, Red is bruiser",
+          "Dodge his Blade's Reach (W) to avoid crowd control and damage.",
+          "Engage Kayn when his ultimate, Umbral Trespass (R), is on cooldown."
+      ],
+      keySpells: ["Passive","W", "R"]
+  },
+  {
+      name: "Kennen",
+      tips: [
+          "Spread out in fights to reduce the impact of Kennen's Slicing Maelstrom (R).",
+          "Engage him after he uses Electrical Surge (W) to avoid being stunned.",
+      ],
+      keySpells: ["R", "W"]
+  },
+  {
+      name: "Kha'Zix",
+      tips: [
+          "Stick together to prevent Kha'Zix from isolating targets for bonus damage.",
+          "Ward key areas to prevent Kha'Zix from catching you with Void Assault (R).",
+          "Engage him after he uses Leap (E) to limit his mobility."
+      ],
+      keySpells: ["Q","R", "E"]
+  },
+  {
+      name: "Kindred",
+      tips: [
+          "Save your abilities inside her Lamb's Respite (R), as it prevents champions from dying.",
+          "Marks will show up on your map on jungle camps, steal those away from kindred"
+      ],
+      keySpells: ["R", "passive"]
+  },
+  {
+      name: "Kled",
+      tips: [
+          "Disengage when Kled uses Chaaaaaaaarge!!! (R) to prevent his team engage, block it for your squishies if your a tank",
+          "Focus Kled when he is dismounted so he cant remount",
+      ],
+      keySpells: ["R", "passive"]
+  },
+  {
+    name: "Kog'Maw",
+    tips: [
+        "Kog'Maw is extremely vulnerable in the early game, so try to engage on him before he reaches late game power. Run away from him after he dies, he will chase you and blow up",
+        "Keep your distance from Kog'Maw during teamfights as his Bio-Arcane Barrage (W) can deal significant damage at range.",
+        "Dodge Kog'Maw's Living Artillery (R) to avoid taking high amounts of poke damage. It only does a lot of damage if he is going AP"
+    ],
+    keySpells: ["passive","W", "R"]
+  },
+  {
+    name: "LeBlanc",
+    tips: [
+        "Be cautious when LeBlanc uses her Distortion (W) to escape; it can make her very hard to catch.",
+        "LeBlanc's ultimate, Mimic (R), copies the effects of her previous ability. Try to predict and dodge her abilities accordingly."
+    ],
+    keySpells: ["W", "R"]
+  },
+  {
+      name: "Lee Sin",
+      tips: [
+          "Lee Sin is dangerous early with his mobility and high burst potential. Avoid extended trades with him. Try to keep your distance from Lee Sin's Sonic Wave (Q), as it can be used to gap-close quickly.",
+          "Lee Sins R kicks you away, avoid standing between him and his team to avoid being kicked into them"
+      ],
+      keySpells: ["Q", "R"]
+  },
+  {
+      name: "Leona",
+      tips: [
+          "Leona can engage easily with her Zenith Blade (E), so be mindful of her positioning and watch out for her crowd control.",
+          "Avoid standing too close to Leona in skirmishes or teamfights as she can lock you down for a long time with her crowd control.",
+      ],
+      keySpells: ["E", "Q"]
+  },
+  {
+      name: "Lillia",
+      tips: [
+          "Lillia is most dangerous when she has the ability to kite and deal damage from a distance. Be sure to stick to her when possible.",
+          "Her Dream-Laden Bough (R) can put you to sleep and follow up with a burst of damage, so try to avoid all getting hit by her",
+      ],
+      keySpells: ["passive","R"]
+  },
+  {
+      name: "Lissandra",
+      tips: [
+          "Lissandra's Frozen Tomb (R) can be used to disable you while dealing damage. Avoid clustering too close to her.",
+          "Her Glacial Path (W) gives her good mobility; be mindful of her escape or engage potential with this ability.",
+      ],
+      keySpells: ["R", "E"]
+  },
+  {
+      name: "Lucian",
+      tips: [
+          "Watch out for Lucian's Piercing Light (Q) and Ardent Blaze (W) combination, which can poke you from a long range.",
+          "Lucian thrives in short trades. If you're fighting him, try to engage in extended fights where his burst is less effective.",
+          "Stand behind minions to avoid the damage of his R"
+      ],
+      keySpells: ["Q", "E","R"]
+  },
+  {
+      name: "Lulu",
+      tips: [
+          "Lulu's Wild Growth (R) can make an ally tanky, so keep an eye on her positioning to prevent her from saving a target.",
+          "Lulu's Whimsy (W) can shut down your ability to deal damage by polymorphing you, so be aware of her cooldowns.",
+          "Try to focus Lulu first in teamfights; she is very squishy and has a powerful utility kit."
+      ],
+      keySpells: ["R", "W", "passive"]
+  },
+  {
+      name: "Lux",
+      tips: [
+          "Lux's Light Binding (Q) can root you for a long time, so be cautious when engaging her or trying to escape.",
+          "Lux's Final Spark (R) can deal massive damage",
+      ],
+      keySpells: ["Q", "R"]
+  },
+  {
+      name: "Malphite",
+      tips: [
+          "His Unstoppable Force (R) can initiate teamfights or turn them around; make sure to have crowd control immunity or dodge when he uses it.",
+          "Malphite scales well with armor; consider building armor penetration or magic damage to deal with him effectively."
+      ],
+      keySpells: ["R", "passive"]
+  },
+  {
+      name: "Malzahar",
+      tips: [
+          "Malzahar's Nether Grasp (R) can silence and suppress you for a long time, so try to avoid standing still in his range. He can easily set up ganks with it",
+      ],
+      keySpells: ["R"]
+  },
+  {
+      name: "Maokai",
+      tips: [
+          "Maokai can engage with his Twisted Advance (W) and lock you down, so be mindful of his crowd control.",
+          "His Sapling Toss (E) provides vision and a slow, so avoid moving into areas where he could hide them (bushes).",
+          "If your a tank consider block a part of his R so your team can run through"
+      ],
+      keySpells: ["W", "E","R"]
+  },
+  {
+      name: "Master Yi",
+      tips: [
+          "Master Yi can quickly clear jungle camps and become a monster in the late game. Try to catch him early to shut him down.",
+          "He can use this to dodge spells, try to wait until he uses it to use key spells",
+          "Use your CC when Master Yi uses his Meditate (W), as it can heal him back to full health quickly."
+      ],
+      keySpells: ["passive","Q", "W"]
+  },
+  {
+  name: "Milio",
+  tips: [
+      "Milio's abilities are designed to heal and shield allies. Focus on disrupting his ability to keep his teammates safe.",
+      "His Cozy Campfire (W) provides healing and bonus range to nearby allies. Can consider waiting for it to go away before fighting",
+      "This doesnt cleanse himself of cc"
+  ],
+  keySpells: ["passive","W", "R"]
+  },
+  {
+    name: "Miss Fortune",
+    tips: [
+        "Miss Fortune is a strong lane bully with her Double Up (Q) and Make it Rain (E), so avoid standing in her range for too long.",
+        "In teamfights, be aware of her Bullet Time (R), as it can wipe out multiple targets if they are caught in its area of effect. Try to crowd control Miss Fortune before she can use her ultimate for maximum impact."
+    ],
+    keySpells: ["Q", "R"]
+}
+//Start at wukong
 ];
