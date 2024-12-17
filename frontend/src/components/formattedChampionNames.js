@@ -146,6 +146,7 @@ const championList = [
     { id: "Vayne", name: "Vayne" },
     { id: "Veigar", name: "Veigar" },
     { id: "Velkoz", name: "Vel'Koz" },
+    { id: "Vex", name: "Vex"},
     { id: "Vi", name: "Vi" },
     { id: "Viego", name: "Viego" },
     { id: "Viktor", name: "Viktor" },
