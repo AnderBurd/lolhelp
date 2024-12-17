@@ -17,7 +17,7 @@ const SearchBar = ({onSelectChampion}) =>{
         else{
             // Filter champions based on the input text
             const filteredChampions = championNames.filter((champion) =>
-                champion.toLowerCase().includes(input.toLowerCase())
+                champion.name.toLowerCase().includes(input.toLowerCase())
             );
             // Show up to 5 suggestions
             setSuggestions(filteredChampions.slice(0, 5));
@@ -25,9 +25,9 @@ const SearchBar = ({onSelectChampion}) =>{
     };
 
     const handleSuggestionClick = (champion) => {
-        setSearchedChampion(champion);
+        setSearchedChampion(champion.name);
         setSuggestions([]);
-        onSelectChampion(champion);
+        onSelectChampion(champion.name);
     };
 
 
@@ -48,23 +48,23 @@ const SearchBar = ({onSelectChampion}) =>{
             <div className = "suggestion-container">
                 {suggestions.length > 0 && (
                     <ul className="suggestions-list">
-                        {suggestions.map((champion, index) => (
+                        {suggestions.map((champion) => (
                             <li 
-                                key={index} 
+                                key={champion.id} 
                                 onClick={() => handleSuggestionClick(champion)}
                                 className="suggestion-item"
                             >
                                 
                                 <img 
-                                src = {"https://ddragon.leagueoflegends.com/cdn/14.22.1/img/champion/" + champion +".png"}
+                                src = {"https://ddragon.leagueoflegends.com/cdn/14.22.1/img/champion/" + champion.id +".png"}
                                 alt = "Failed to load profile of champion" //Show profile picture as well
                                 className='list-profilePic'
                                 ></img>
-                                {champion}
+                                {champion.name}
                             </li>
                         ))}
                     </ul>
-                    )}
+                )}
             </div>
         </div>
     );

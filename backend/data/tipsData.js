@@ -192,6 +192,84 @@ module.exports = [
           "Camille's R traps a single target, be careful if you dont win in a 1v1 against her, stay near your turret"
         ],
         keySpells: ["E", "W", "R"]
-      }
+      },
+      {name:"Cassiopeia",
+        tips:[
+          "Cassiopeia's Q poisons you, enabling her to spam E for massive damage. Avoid standing in the center of her Q cloud.",
+          "Cassiopeia's W prevents dashes and blinks. Avoid fighting her in narrow spaces where this ability is hard to escape.",
+          "Her ultimate stuns you if you're facing her. Turn away when you anticipate her R to reduce its impact."
+        ],
+        keySpells:["Q","W","R"]},
+       
+       {name:"Cho'Gath",
+        tips:[
+          "Cho'Gath's Q has a wind-up animation. Move unpredictably to dodge the knock-up.",
+          "Cho'Gath heals when killing minions with his passive. Denying farm can reduce his sustain.",
+          "His ultimate does true damage and scales with stacks. Stay aware of his R range, especially when low health."
+        ],
+        keySpells:["Q","passive","R"]},
+       
+       {name:"Corki",
+        tips:[
+          "Corki is short ranged, if you can baitt out his W which has a long CD, you can make a play on him easily",
+          "Corki's R is a poke tool that deals massive damage when 'Big One' is ready. Dodge sideways to avoid getting hit.",
+          "Corki deals true damage, he can be quite bursty so watch out"
+        ],
+        keySpells:["W","R","passive"]},
+       
+       {name:"Darius",
+        tips:[
+          "Darius applies bleed stacks with autos and abilities. Avoid extended trades to prevent him from stacking his passive.",
+          "His Q deals more damage at the edge and heals him. Stay close to him to avoid the outer circle.",
+          "Darius's R resets on kill. Spread out in team fights to minimize his impact."
+        ],
+        keySpells:["passive","Q","R"]},
+       
+       {name:"Diana",
+        tips:[
+          "Diana's Q reveals her curved skillshot path. Dodge sideways to avoid getting marked.",
+          "Diana becomes a strong diver when she hits 6. Save escapes for her all-in after she uses R.",
+          "Her passive empowers her auto-attacks after casting spells. Avoid trades when she glows."
+        ],
+        keySpells:["Q","R","passive"]},
+       
+       {name:"Dr. Mundo",
+        tips:[
+          "Mundo's Q cleaver slows and deals percentage health damage. Dodge the cleaver to reduce his poke.",
+          "Mundo's W reduces CC duration. Avoid relying on single-CC abilities to lock him down.",
+          "Mundo's ultimate provides huge healing. Ignite or anti-heal items can counter his regeneration."
+        ],
+        keySpells:["Q","W","R"]},
+       
+       {name:"Draven",
+        tips:[
+          "Draven's axes fall where he's moving. Predict where he'll go to punish him during catches.",
+          "Interrupting Draven's E can stop his damage output and make him easier to catch.",
+          "Draven's R can be used across the map. Watch your health if you're low to avoid being sniped."
+        ],
+        keySpells:["Q","E","R"]},
+       
+       {name:"Ekko",
+        tips:[
+          "Ekko's passive makes his 3rd auto attack deal bonus damage and slow. Avoid trades when he has two passive stacks.",
+          "Ekko's W stuns enemies caught in its zone. Watch for the casting animation to stay out of it.",
+          "Ekko's R allows him to heal and deal damage. Avoid chasing him when his ghost appears nearby."
+        ],
+        keySpells:["passive","W","R"]},
+       
+       {name:"Elise",
+        tips:[
+          "Elise's Q deals damage based on missing health. Avoid getting low in fights against her.",
+          "Her E allows her to engage or escape. Avoid standing near walls where she can use her spider form jump.",
+        ],
+        keySpells:["Q","E"]},
+       
+       {name:"Evelynn",
+        tips:[
+          "Evelynn becomes camouflaged after level 6. Use Control Wards to spot her before she engages.",
+          "Her charm from W requires time to activate. Avoid standing still or close when she casts it on you.",
+          "Evelynn's R lets her escape while dealing damage. Save burst for after she uses it."
+        ],
+        keySpells:["passive","W","R"]},
 
 ];
