@@ -699,6 +699,736 @@ module.exports = [
         "In teamfights, be aware of her Bullet Time (R), as it can wipe out multiple targets if they are caught in its area of effect. Try to crowd control Miss Fortune before she can use her ultimate for maximum impact."
     ],
     keySpells: ["Q", "R"]
+  },
+  {
+    name: "Wukong",
+    tips: [
+        "Wukong's passive increases his resistances when near enemy champions. Be cautious of prolonged trades.",
+        "His Decoy (W) allows him to become invisible and reposition. Use vision or crowd control to reveal him.",
+        "Wukong's Cyclone (R) knocks up and damages enemies in a wide area. Spread out during fights to minimize its impact."
+    ],
+    keySpells: ["passive","W", "R"]
+  },
+  {
+    name: "Mordekaiser",
+    tips: [
+        "Mordekaiser's passive grants him bonus damage and movement speed after landing abilities. Be cautious of prolonged trades.",
+        "His Realm of Death (R) isolates one target. Stick to your tower if you lose 1v1 against him",
+        "Build healing reduction to counter his sustain from his abilities and items."
+    ],
+    keySpells: ["passive", "R", "W"]
+},
+{
+    name: "Morgana",
+    tips: [
+        "Morgana's Black Shield (E) blocks crowd control. Time your CC abilities when it's down or target others.",
+        "Avoid standing in her Tormented Shadow (W) for prolonged periods to minimize damage.",
+        "Stay spread out to avoid multiple people being hit by her Soul Shackles (R). It takes a long time to stun, you can run out of it"
+    ],
+    keySpells: ["E","W", "R"]
+},
+{
+    name: "Nami",
+    tips: [
+        "Nami's Aqua Prison (Q) is a strong crowd control tool. Stay mobile to avoid getting hit.",
+        "Engage when her Tidecaller's Blessing (E) is on cooldown to reduce her ally's effectiveness.",
+        "Spread out to avoid being hit by her Tidal Wave (R) and follow-up damage."
+    ],
+    keySpells: ["Q","E", "R"]
+},
+{
+    name: "Nasus",
+    tips: [
+        "Nasus gains power over time as he stacks his Siphoning Strike (Q). Deny him farm early.",
+        "Avoid prolonged trades during his Fury of the Sands (R), as it significantly increases his damage and survivability.",
+    ],
+    keySpells: ["Q", "R"]
+},
+{
+    name: "Nautilus",
+    tips: [
+        "Nautilus' Dredge Line (Q) is a strong engage tool. Use vision to spot him",
+        "Stay spread out to minimize the impact of his Depth Charge (R) during fights.",
+    ],
+    keySpells: ["Q", "R"]
+},
+{
+    name: "Naafiri",
+    tips: [
+      "Naafiri's dogs block skillshots so avoid picking champions that rely on single target skillshots against him",
+      "Naafiri's W is his main way of getting on top of someone but it has a long cooldown so play around it",
+      "Naafiri's second Q is what does a lot of damage so once you get hit by the first, try to dodge the second"
+    ],
+    keySpells: ["passive","E", "Q"]
+},
+{
+    name: "Neeko",
+    tips: [
+        "Neeko can disguise herself as allies with her passive. Pay attention to her movements and abilities to identify her.",
+        "Avoid clustering during fights to reduce the impact of her Pop Blossom (R).",
+        "Engage her when her Tangle-Barbs (E) is on cooldown to reduce her crowd control potential."
+    ],
+    keySpells: ["Passive", "R","E"]
+},
+{
+    name: "Nidalee",
+    tips: [
+        "Nidalee's Javelin Toss (Q) deals more damage the further it travels. Stay behind minions to reduce its impact.",
+        "Ward bushes to avoid being ambushed by her Pounce (W) and cougar form.",
+    ],
+    keySpells: ["Q", "W"]
+},
+{
+    name: "Nilah",
+    tips: [
+        "Nilah's Jubilant Veil (W) blocks projectiles. Wait for it to expire before committing to trades.",
+        "Avoid clustering during fights to reduce the effectiveness of her Apotheosis (R).",
+        "If you see her miss a Q, take advantage of that and fight her, she is melee and weak without the buff it gives"
+    ],
+    keySpells: ["W", "R", "Q"]
+},
+{
+    name: "Nocturne",
+    tips: [
+        "Nocturne's Paranoia (R) limits vision and allows him to dive onto targets. Ward effectively to predict his engages.",
+        "Save your movement abilities to run out of his E so you dont get feared",
+    ],
+    keySpells: ["R", "E"]
+},
+{
+    name: "Nunu & Willump",
+    tips: [
+        "Interrupt Nunu's Absolute Zero (R) with crowd control to prevent its full channel.",
+        "Nunu can spam gank early on with the snowball, watch out for it",
+        "Ward objectives to spot his Consume (Q) attempts, especially in the jungle."
+    ],
+    keySpells: ["R","W" ,"Q"]
+},
+{
+    name: "Olaf",
+    tips: [
+        "Olaf becomes stronger the lower his health. Avoid prolonged fights if you can't burst him down.",
+        "His Ragnarok (R) makes him immune to crowd control. Kite him until it expires.",
+    ],
+    keySpells: ["passive", "R"]
+},
+{
+    name: "Orianna",
+    tips: [
+        "Orianna's Command: Shockwave (R) can turn fights. Spread out to avoid multiple people being hit.",
+        "Avoid standing near her ball during fights to reduce damage from Command: Dissonance (W).",
+    ],
+    keySpells: ["R", "W"]
+},
+{
+    name: "Ornn",
+    tips: [
+        "Ornn's Bellows Breath (W) makes him unstoppable. Time your crowd control after it ends.",
+        "Avoid standing in a line during fights to reduce the impact of his Call of the Forge God (R).",
+        "Dont stand near walls, also once Ornn Q's expect for him to E on it so run away from the pillar"
+    ],
+    keySpells: ["W", "R", "E"]
+},
+{
+    name: "Pantheon",
+    tips: [
+        "Pantheon excels in early-game skirmishes. Play defensively until he falls off in the late game.",
+        "His Aegis Assault (E) blocks damage from a specific direction. Wait for it to expire before attacking.",
+        "Ward effectively to spot his Grand Starfall (R) channel and avoid being surprised."
+    ],
+    keySpells: ["passive","E", "R"]
+},
+{
+    name: "Poppy",
+    tips: [
+        "Poppy's Steadfast Presence (W) blocks dashes. Use non-dash abilities to engage her.",
+        "Avoid standing near walls to reduce the chance of being stunned by her Heroic Charge (E).",
+        "Engage her when her Keeper's Verdict (R) is on cooldown to avoid being knocked away."
+    ],
+    keySpells: ["W", "E", "R"]
+},
+{
+  name: "Pyke",
+  tips: [
+      "Pyke's Bone Skewer (Q) has a wind-up. Stay mobile to avoid being pulled.",
+      "You can see its execute threshold on your HP bar",
+      "It will show around your champion if pyke is invisible around you",
+      "If pyke has hail of blades as his rune, he does a lot of damage early watch out for his level 2 all in with flash"
+  ],
+  keySpells: ["Q", "R", "W","passive"]
+},
+{
+  name: "Qiyana",
+  tips: [
+      "Qiyana's Supreme Display of Talent (R) stuns if it hits terrain. Avoid fighting near walls.",
+      "Her Terrashape (W) grants her extra effects based on the element she collects. Pay attention to her element choice.",
+  ],
+  keySpells: ["R", "W"]
+},
+{
+  name: "Quinn",
+  tips: [
+      "Quinn's Vault (E) marks you, enhancing her damage. Back away after being marked.",
+      "She can get around the map very quickly with her R, keep track of where she is",
+  ],
+  keySpells: ["E", "R"]
+},
+{
+  name: "Rakan",
+  tips: [
+      "Rakan's Grand Entrance (W) is his main engage tool. Stay mobile to avoid being knocked up.",
+      "His Battle Dance (E) allows him to shield allies. Focus him when he can't dash away.",
+      "Spread out during fights to minimize the impact of his quick charm combo with The Quickness (R)."
+  ],
+  keySpells: ["W", "E","R"]
+},
+{
+  name: "Rammus",
+  tips: [
+      "Avoid attacking Rammus during his Defensive Ball Curl (W), as it reflects damage and increases his defenses.",
+      "Use crowd control to interrupt his Powerball (Q) engage or stand behind your tankier members.",
+  ],
+  keySpells: ["W", "Q"]
+},
+{
+  name: "Rek'Sai",
+  tips: [
+      "Rek'Sai's Tremor Sense reveals moving units. Stand still to avoid detection if she's burrowed.",
+      "Interrupt her Burrow (W) knock-up with crowd control or disengage.",
+      "Avoid fighting her in her tunnels, where she has more mobility and control."
+  ],
+  keySpells: ["passive","W", "E"]
+},
+{
+  name: "Rell",
+  tips: [
+      "Rell's Attract and Repel (E) stuns if her tether connects. Avoid standing near her linked ally.",
+      "Her Magnet Storm (R) pulls enemies together. Spread out during fights to reduce its impact.",
+      "Engage her when her Ferromancy (W) is on cooldown to reduce her mobility."
+  ],
+  keySpells: ["E", "R", "W"]
+},
+{
+  name: "Renata Glasc",
+  tips: [
+      "Renata's Hostile Takeover (R) makes allies attack each other. Spread out to minimize its effect.",
+      "Avoid fighting when her Bailout (W) is active, as it can revive her allies if they secure a kill.",
+  ],
+  keySpells: ["R", "W"]
+},
+{
+  name: "Renekton",
+  tips: [
+      "Renekton's empowered abilities deal more damage. Avoid trades when his fury bar is full.",
+      "Kite him during his Dominus (R) to minimize his impact in fights.",
+      "Engage him when his Slice and Dice (E) is on cooldown to reduce his mobility."
+  ],
+  keySpells: ["passive","R", "E"]
+},
+{
+  name: "Rengar",
+  tips: [
+      "Avoid bushes when laning against Rengar, as his passive grants him bonus leap range.",
+      "Ward deep to spot his Thrill of the Hunt (R) ganks before he ambushes.",
+  ],
+  keySpells: ["passive", "R"]
+},
+{
+  name: "Riven",
+  tips: [
+      "Riven's Broken Wings (Q) is her main damage tool. Punish her when it's on cooldown.",
+      "Engage her after her Wind Slash (R) is used, as it significantly reduces her burst damage."
+  ],
+  keySpells: ["Q", "R"]
+},
+{
+  name: "Rumble",
+  tips: [
+      "Avoid standing in the Equalizer (R) for extended periods, as it deals massive damage over time.",
+      "Engage him when his Heat bar is low to reduce his ability effectiveness.",
+  ],
+  keySpells: ["R", "passive"]
+},
+{
+  name: "Ryze",
+  tips: [
+      "Ryze's Spell Flux (E) enhances his other abilities. Avoid clustering to reduce its spread.",
+      "Engage him when his Rune Prison (W) is on cooldown to minimize his crowd control.",
+      "Interrupt his Realm Warp (R) with crowd control to deny his team a repositioning tool."
+  ],
+  keySpells: ["E", "W", "R"]
+},
+{
+  name: "Samira",
+  tips: [
+      "Samira's Blade Whirl (W) blocks projectiles. Wait for it to expire before committing to trades.",
+      "Avoid clustering during fights to reduce the impact of her Inferno Trigger (R). Engage her when her passive style bar is low, as her damage potential is reduced since she cant R."
+  ],
+  keySpells: ["W", "R"]
+},
+{
+  name: "Sejuani",
+  tips: [
+      "Sejuani's Permafrost (E) stuns if she lands 4 stacks. Avoid prolonged fights with her or her allies.",
+      "Engage her when her Arctic Assault (Q) is on cooldown to reduce her mobility.",
+      "Watch out for her R into cc chain combo"
+  ],
+  keySpells: ["E", "Q", "R"]
+},
+{
+  name: "Senna",
+  tips: [
+      "Engage her when her Last Embrace (W) is on cooldown to reduce her crowd control potential.",
+      "Her Mist Wraiths (Passive) increase her scaling. Deny her soul collection when possible.",
+      "Sennas R is a global so watch out for it no matter where you are"
+  ],
+  keySpells: ["W", "passive","R"]
+},
+{
+  name: "Seraphine",
+  tips: [
+      "Seraphine's Encore (R) extends its range if it hits allies or enemies. Spread out during fights.",
+      "Avoid clustering to reduce the impact of her  High Note (Q).",
+      "Engage her when her passive Echo is unavailable to lower her ability efficiency."
+  ],
+  keySpells: ["R", "Q", "passive"]
+},
+{
+  name: "Sett",
+  tips: [
+      "Sett's Facebreaker (E) stuns if it grabs enemies on both sides. Avoid standing in line with teammates.",
+      "Kite him during his Haymaker (W) to reduce its true damage impact.",
+      "Engage him after his The Show Stopper (R) is used to minimize his team-fighting presence."
+  ],
+  keySpells: ["E", "W", "R"]
+},
+{
+  name: "Shaco",
+  tips: [
+      "Ward the jungle to track Shaco's movements, as he relies on deception and ganks. Sweeper is good against him",
+      "Destroy Jack in the Boxes (W) when spotted to deny his crowd control traps.",
+      "His clone is way squishier so if your hitting him and your doing way too much damage, it might be the clone"
+  ],
+  keySpells: ["Q", "W", "R"]
+},
+{
+  name: "Shen",
+  tips: [
+      "Engage Shen when his Shadow Dash (E) is on cooldown to reduce his crowd control.",
+      "Interrupt his Stand United (R) channel to deny his cross-map shield and teleport.",
+      "Trade cautiously when his Ki Barrier (Passive) shield is available."
+  ],
+  keySpells: ["E", "R", "passive"]
+},
+{
+  name: "Shyvana",
+  tips: [
+      "Avoid standing in the area of her Flame Breath (E) to reduce her damage.",
+      "Engage her when her Dragon's Descent (R) is on cooldown to limit her team-fight impact."
+  ],
+  keySpells: ["E", "R"]
+},
+{
+  name: "Singed",
+  tips: [
+      "Do not chase Singed blindly, as his Poison Trail (Q) deals consistent damage.",
+      "Avoid standing near his Fling (E) range to reduce his displacement threat.",
+  ],
+  keySpells: ["Q", "E"]
+},
+{
+  name: "Sion",
+  tips: [
+      "Interrupt Sion's Decimating Smash (Q) charge to prevent the knock-up effect.",
+      "Watch for his unstoppable Onslaught (R) to avoid being hit by his engage you can hear it when he casts it even if you cant see him."
+  ],
+  keySpells: ["Q","R"]
+},
+{
+  name: "Sivir",
+  tips: [
+      "Bait out Sivir's Spell Shield (E) before using your key crowd control abilities.",
+      "Avoid standing in the ricochet path of her Boomerang Blade (Q)",
+      "Engage her when her On The Hunt (R) is on cooldown to reduce her team mobility."
+  ],
+  keySpells: ["E", "Q"]
+},
+{
+  name: "Skarner",
+  tips: [
+      "Dont clump up for his R, it can swing a fight if he hits multiple people",
+      "Skarner can gank through walls, keep the areas behind walls warded"
+  ],
+  keySpells: ["R", "E"]
+},
+{
+  name: "Sona",
+  tips: [
+      "Engage Sona when her Crescendo (R) is on cooldown to reduce her team utility.",
+      "Focus her in fights, she offers lots of utility"
+  ],
+  keySpells: ["R", "W"]
+},
+{
+  name: "Soraka",
+  tips: [
+      "Kill soraka first in fights, her healing is crazy",
+      "This heals all her allies no matter where they are, keep it in mind even if you arent near soraka",
+  ],
+  keySpells: ["W", "R"]
+},
+{
+  name: "Swain",
+  tips: [
+      "Kite him during his Demonic Ascension (R) to minimize his healing and area damage. It lasts forever if you stand near him",
+      "Engage him after he uses his E, it is his only CC"
+  ],
+  keySpells: ["R","E"]
+},
+{
+  name: "Sylas",
+  tips: [
+      "Engage Sylas when his Abscond/Abduct (E) is on cooldown to limit his mobility.",
+      "Track his hijacked ultimate to prepare for its effects during fights. Try not to pick champions that give him good R's",
+      "Consider getting anti-heal for his healing on his W"
+  ],
+  keySpells: ["E", "R", "W"]
+},
+{
+  name: "Smolder",
+  tips: [
+    "Smolder hits his power spike at 225 stacks when he gets the execute. Dont let him free farm early, get a lead before he is at 225 stacks",
+    "Smolders E is his only mobility spell, punish him if he wastes it"
+  ],
+  keySpells: ["passive", "E"]
+},
+{
+  name: "Syndra",
+  tips: [
+      "Avoid clustering to reduce the impact of her Scatter the Weak (E)",
+      "Engage her when her Unleashed Power (R) is on cooldown to minimize her burst damage.",
+      "Stay mobile to avoid her poke with Dark Sphere (Q)."
+  ],
+  keySpells: ["E", "R", "Q"]
+},
+{
+  name: "Tahm Kench",
+  tips: [
+      "Avoid prolonged trades with Tahm Kench to minimize the effects of his An Acquired Taste (Passive) stacks. Tahm kench is very strong 1v1 early",
+      "Keep your distance to avoid his Tongue Lash (Q), which slows. At max stacks it stuns."
+  ],
+  keySpells: ["passive","Q"]
+},
+{
+  name: "Taliyah",
+  tips: [
+      "Stay mobile to avoid her consistent poke damage from Threaded Volley (Q).",
+      "Carefull for her roams/ganks when her R is up, she can wall off champions"
+  ],
+  keySpells: ["Q", "R"]
+},
+{
+  name: "Talon",
+  tips: [
+      "Ward effectively to track Talon's roams, as he excels at snowballing other lanes.",
+      "Engage him when Shadow Assault (R) is on cooldown to reduce his burst potential.",
+      "When he hits you with 3 abilities he bleeds you for a large chunk of damage, when you get hit by 2 abilities you can back off and wait for it to wear out"
+  ],
+  keySpells: ["E", "R", "passive"]
+},
+{
+  name: "Taric",
+  tips: [
+      "Back off when he R's and wait it out because he makes his teammates invulnerable",
+      "Avoid clustering during fights to reduce the effectiveness of his Dazzle (E).",
+
+  ],
+  keySpells: ["R", "E"]
+},
+{
+  name: "Teemo",
+  tips: [
+      "Avoid stepping into bushes or areas without vision to prevent stepping on Noxious Traps (R).",
+      "Be cautious of his poke damage with Blinding Dart (Q), try not to pick auto attack based champions into him."
+  ],
+  keySpells: ["R", "Q"]
+},
+{
+  name: "Thresh",
+  tips: [
+      "Avoid standing near walls to reduce the chance of getting hooked by Death Sentence (Q).",
+      "Engage him when Flay (E) and The Box (R) are on cooldown to limit his crowd control.",
+      "Focus him when his Dark Passage (W) is on cooldown to reduce his ability to save allies."
+  ],
+  keySpells: ["Q", "E", "R"]
+},
+{
+  name: "Tristana",
+  tips: [
+      "Try not to let her fully stack her E, it gives her full cooldown on her W back. Watch out for her early game all in",
+      "Engage her when Rocket Jump (W) is on cooldown to limit her mobility.",
+      "Stay out of range of Buster Shot (R) to avoid being knocked back."
+  ],
+  keySpells: ["E", "W", "R"]
+},
+{
+  name: "Trundle",
+  tips: [
+      "Avoid standing in his Frozen Domain (W) to deny him attack speed and healing bonuses.",
+      "Engage him when his Subjugate (R) is on cooldown to minimize his durability.",
+  ],
+  keySpells: ["W", "R"]
+},
+{
+  name: "Tryndamere",
+  tips: [
+      "Engage Tryndamere when his Undying Rage (R) is on cooldown to prevent his sustained damage. Click on his champion to see his R duration and when its running out",
+      "Avoid standing near him when his Fury bar is full, as it increases his critical strike chance.",
+  ],
+  keySpells: ["R", "passive"]
+},
+{
+  name: "Twisted Fate",
+  tips: [
+      "Ward effectively to track Twisted Fate's roams with Destiny (R).",
+      "Engage him when his Pick A Card (W) is on cooldown to reduce his crowd control and burst potential.",
+  ],
+  keySpells: ["R", "W"]
+},
+{
+  name: "Twitch",
+  tips: [
+      "Ward effectively to counter Twitch's Ambush (Q) and prevent surprise engages.",
+      "Engage him when Spray and Pray (R) is on cooldown to reduce his team-fighting potential.",
+  ],
+  keySpells: ["Q", "R"]
+},
+{
+  name: "Udyr",
+  tips: [
+      "Engage Udyr when his Stance cooldowns are up to reduce his overall effectiveness.",
+      "Kite him to avoid his melee range stuns and damage.",
+  ],
+  keySpells: ["passive", "E"]
+},
+{
+  name: "Urgot",
+  tips: [
+      "Back away from Urgot when you are in execute range of his R",
+      "Stay mobile to avoid being locked down by his Disdain (E)."
+  ],
+  keySpells: ["R", "E"]
+},
+{
+  name: "Varus",
+  tips: [
+      "Engage Varus when Chain of Corruption (R) is on cooldown to limit his crowd control.",
+      "Stay mobile to avoid his Piercing Arrow (Q) poke damage."
+  ],
+  keySpells: ["R","Q"]
+},
+{
+  name: "Vayne",
+  tips: [
+      "Avoid standing near walls to reduce the impact of her Condemn (E) stun.",
+      "Engage her when Final Hour (R) is on cooldown to limit her mobility and stealth.",
+      "Kite her to avoid her consistent damage from Silver Bolts (W). Dont pick resistance stack tanks into her, she does true damage"
+  ],
+  keySpells: ["E", "R", "W"]
+},
+{
+  name: "Veigar",
+  tips: [
+      "Pick champions with blinks to be able to get out of his cage",
+      "Veigar is weak early before he gets his Q stacks, dont let him have a easy time early on"
+  ],
+  keySpells: ["E", "Q"]
+},
+{
+  name: "Vel'Koz",
+  tips: [
+      "His passive does big true damage, dont let him hit successive abilities on you to proc it",
+      "You can use CC to cancel his R ",
+  ],
+  keySpells: ["passive", "R"]
+},
+{
+  name: "Vex",
+  tips: [
+      "Her R has a very large range so watch out when it is up",
+      "She has long cooldowns for all her abilities so prolonged trades are good"
+  ],
+  keySpells: ["R", "Q"]
+},
+{
+  name: "Vi",
+  tips: [
+      "Engage Vi when Assault and Battery (R) is on cooldown to reduce her lockdown potential.",
+      "Avoid clustering to minimize the impact of her Vault Breaker (Q) and Excessive Force (E). She is strong early on",
+  ],
+  keySpells: ["R", "Q"]
+},
+{
+  name: "Viego",
+  tips: [
+      "His passive lets him pick up a dead body and use their basic abilities for a short time, watch out for it. ",
+      "Stay mobile to dodge his Spectral Maw (W) stun."
+  ],
+  keySpells: ["passive","W"]
+},
+{
+  name: "Viktor",
+  tips: [
+      "Engage Viktor when Chaos Storm (R) is on cooldown to reduce his burst damage. Once he has the evolution on it, it grows if he kills champions",
+      "Dodge his Death Ray (E) to avoid poke damage.",
+      "Stay mobile to avoid his Gravity Field (W) and slow zone control. Get out of it to not get stunned"
+  ],
+  keySpells: ["R", "E", "W"]
+},
+{
+  name: "Vladimir",
+  tips: [
+      "Engage Vladimir when his Sanguine Pool (W) is on cooldown to reduce his escape options.",
+      "Apply healing reduction to counteract his sustain from Transfusion (Q).",
+      "Avoid clustering during fights to minimize the impact of Hemoplague (R)."
+  ],
+  keySpells: ["W", "Q", "R"]
+},
+{
+  name: "Volibear",
+  tips: [
+      "Engage Volibear when Stormbringer (R) is on cooldown to reduce his diving potential.",
+      "This is his only way of getting on you, kite him out with your team and watch out for his splitpush"
+  ],
+  keySpells: ["R","Q"]
+},
+{
+  name: "Warwick",
+  tips: [
+      "Engage Warwick when Infinite Duress (R) is on cooldown to limit his suppression. You cannot cleanse it",
+      "Warwick has lots of healing, consider getting anti heal",
+      "His E gives him damage reduction, you can wait before it runs out to use your abilities"
+  ],
+  keySpells: ["R", "Q", "W"]
+},
+{
+  name: "Xayah",
+  tips: [
+      "Avoid standing in the path of her Feather placement to reduce the damage from Bladecaller (E) when she calls her feathers back to her",
+      "Engage Xayah when Featherstorm (R) is on cooldown to reduce her escape options.",
+      "Early game her W is her main source of damage, it has a long cooldown take advantage when it is on cooldown"
+  ],
+  keySpells: ["E", "R", "W"]
+},
+{
+  name: "Xerath",
+  tips: [
+      "Dodge Arcanopulse (Q) and Eye of Destruction (W) to reduce his poke damage.",
+      "Engage him when Rite of the Arcane (R) is on cooldown to limit his long-range impact.",
+      "Stay mobile to avoid being caught by Shocking Orb (E).",
+      "Xeraths abilites are all skill shots, getting early boots for movespeed is worth it"
+  ],
+  keySpells: ["Q", "R", "E"]
+},
+{
+  name: "Xin Zhao",
+  tips: [
+      "Kite him to minimize his melee range damage from Three Talon Strike (Q).",
+      "His W gives his E massive range, avoid getting hit by it"
+  ],
+  keySpells: ["Q", "W"]
+},
+{
+  name: "Yasuo",
+  tips: [
+      "Engage Yasuo when Wind Wall (W) is on cooldown to reduce his defensive options.",
+      "Avoid clustering to minimize the impact of Last Breath (R) in teamfights.",
+      "Trade around his passive shield, hit him to get rid of it, back off, then go back in once it wears off"
+  ],
+  keySpells: ["W", "R", "passive"]
+},
+{
+  name: "Yone",
+  tips: [
+      "His E has a long cooldown, fight him once it down",
+      "Avoid clustering to reduce the effectiveness of Fate Sealed (R) in teamfights.",
+      "Kite him to avoid his melee range damage from Mortal Steel (Q)."
+  ],
+  keySpells: ["E", "R", "Q"]
+},
+{
+  name: "Yorick",
+  tips: [
+      "Avoid fighting Yorick near his Mist Walkers as they deal significant damage.",
+      "Destroy the Maiden of the Mist quickly to reduce his overall damage output.",
+      "Yorick is a strong 1v1 splitpusher"
+  ],
+  keySpells: ["passive", "R", "Q"]
+},
+{
+  name: "Yuumi",
+  tips: [
+      "Focus on her attached ally to prevent Yuumi from being effective in fights.",
+      "She is weak in lane, pick something strong early to punish it",
+  ],
+  keySpells: ["W", "passive"]
+},
+{
+  name: "Zac",
+  tips: [
+      "Avoid standing close to each other to minimize the impact of his Elastic Slingshot (E) and Let's Bounce! (R).",
+      "Destroy his cell blobs by stepping on them to prevent him from healing during fights.",
+  ],
+  keySpells: ["E", "passive"]
+},
+{
+  name: "Zed",
+  tips: [
+      "Stay mobile to dodge Razor Shuriken (Q) and Shadow Slash (E).",
+      "W is his main cooldown in lane, punish it when it is down"
+  ],
+  keySpells: ["Q", "W"]
+},
+{
+  name: "Zeri",
+  tips: [
+      "Engage Zeri when Lightning Crash (R) is on cooldown to reduce her mobility and damage.",
+      "Avoid standing in a line to reduce the impact of her Ultrashock Laser (W).",
+      "She is very fast, champions with point and click CC are good against her"
+  ],
+  keySpells: ["R", "W", "Q"]
+},
+{
+  name: "Ziggs",
+  tips: [
+      "Stay mobile to avoid his Bouncing Bombs (Q) and poke damage.",
+      "Engage Ziggs when Mega Inferno Bomb (R) is on cooldown to reduce his teamfight impact.",
+      "With his passive and W, he can take turrets very quickly, dont leave him alone with them"
+  ],
+  keySpells: ["Q", "R", "W"]
+},
+{
+  name: "Zilean",
+  tips: [
+      "Engage Zilean when Chronoshift (R) is on cooldown to limit his revive utility.",
+      "Dodge his Time Bombs (Q), to avoid getting stunned dont get hit by 2 Q's",
+  ],
+  keySpells: ["R", "Q"]
+},
+{
+  name: "Zoe",
+  tips: [
+      "Avoid standing near minions to reduce the effectiveness of Paddle Star (Q).",
+      "Dodge Sleepy Trouble Bubble (E) to prevent her high burst damage."
+  ],
+  keySpells: ["Q", "E"]
+},
+{
+  name: "Zyra",
+  tips: [
+      "Destroy Zyra's plants quickly to reduce her sustained damage.",
+      "Engage her when Stranglethorns (R) is on cooldown to limit her teamfight impact. It is slow so you can run out of it usually",
+  ],
+  keySpells: ["passive", "R"]
 }
-//Start at wukong
 ];
