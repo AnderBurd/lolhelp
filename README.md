@@ -37,7 +37,7 @@ This project is a web application designed to help players improve their gamepla
 
 2. **Install NPM packages:**
    ```bash
-  npm install
+   npm install
 3. **Set up Environment Variables:**
   Create a .env file in the backend directory and add the following
    ```bash
