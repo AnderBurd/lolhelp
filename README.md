@@ -42,12 +42,12 @@ This project is a web application designed to help players improve their gamepla
   Create a .env file in the backend directory and add the following
    ```bash
    : MONGO_URI=your-mongodb-connection-string
-4. **Run the Project:**
+4. **Run the Project:** <br>
    Start the backend server:
    ```bash
    cd backend
-   Start the frontend server:
    npm start
+   Start the frontend server: <br>
    ```bash
    cd frontend
    npm start
