@@ -41,11 +41,11 @@ This project is a web application designed to help players improve their gamepla
 3. **Set up Environment Variables:**
   Create a .env file in the backend directory and add the following
    ```bash
-  : MONGO_URI=your-mongodb-connection-string
+   : MONGO_URI=your-mongodb-connection-string
 4. **Run the Project:**
    ```bash
-    cd backend
-    npm start
+   cd backend
+   npm start
   ```bash
   cd frontend
   npm start
