@@ -46,7 +46,7 @@ This project is a web application designed to help players improve their gamepla
 - Start the backend server:
   ```bash
   cd backend
-  npm start
+  node server.js
   ```
 - Start the frontend server:
   ```bash
