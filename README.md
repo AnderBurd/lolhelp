@@ -43,11 +43,11 @@ This project is a web application designed to help players improve their gamepla
    ```bash
    MONGO_URI=your-mongodb-connection-string
 4. **Run the Project:** <br>
-  Start the backend server:
+  -Start the backend server:
    ```bash
    cd backend
-   npm start ```
-  Start the frontend server: <br>
+   npm start 
+  -Start the frontend server: <br>
    ```bash
    cd frontend
    npm start
