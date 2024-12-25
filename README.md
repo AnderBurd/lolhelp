@@ -32,7 +32,7 @@ This project is a web application designed to help players improve their gamepla
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/league-champion-tips.git
+   git clone git@github.com:AnderBurd/lolhelp.git
    cd lolHelp
 
 2. **Install NPM packages:**
@@ -46,6 +46,6 @@ This project is a web application designed to help players improve their gamepla
    ```bash
    cd backend
    npm start
-  ```bash
-  cd frontend
-  npm start
+   ```bash
+   cd frontend
+   npm start
